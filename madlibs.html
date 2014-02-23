@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<title>Welcome to Mad Libs!</title>
+			<link rel="stylesheet" href="madlibs.css" />
+			<link href='http://fonts.googleapis.com/css?family=Gochi+Hand' rel='stylesheet' type='text/css'>
+		</head>
+	<body>
+		<div class = "main">
+			<div id = "writing">
+			<h1>Welcome to Mad Libs with Michelle!</h1>
+			<h4>..where our motto is: we angry as heck</h4>
+			<br />
+			<div id="game">
+				<button id="playbutton" type="button" onclick="beginGame()">Play Now!</button>
+			</div>
+			<script>
+				function beginGame()
+					{
+						var possibleitems = new Array("Noun:", "Adjective:", "Verb:", "Smell:", "Adverb:", "Name:")
+						var newtext = "To begin, please input the following fields: <br /> <br /><form name='htmlform' action='madlibs.cgi'> <table width='800px'> <tr> <td valign='top'> <label id='firstvalue'>fifiya</label> </td> <td valign='top'> <input type='text' name='firstvalue' maxlength='70' size='70'> </td> </tr> <tr> <td valign='top'> <label id='secondvalue'>suckatoo</label> </td> <td valign='top'> <input type='text' name='secondvalue' maxlength='70' size='70'> </td> </tr> <tr> <td valign='top'> <label id='thirdvalue'>jajajaj</label> </td> <td valign='top'> <input type='text' name='thirdvalue' maxlength='70' size='70'> </td> </tr> <tr> <td valign='top'> <label id='fourthvalue'>voldemort</label> </td> <td valign='top'> <input type='text' name='fourthvalue' maxlength='70' size='70'> </td> </tr> <tr> <td valign='top'> <label id='fifthvalue'>KLAROLINE</label> </td> <td valign='top'> <input type='text' name='fifthvalue' maxlength='70' size='70'> </td> </tr><tr><tr><input type='hidden' name='choicesmade' value='whymeeee'><tr><tr><tr><td valign='top'></td><td colspan='4' valign='middle'> <input id='submitbutton' type='submit' value='Submit'> </td> </tr></table> </form>"
+						var choice = possibleitems[Math.floor(Math.random()*possibleitems.length)];
+						newtext = newtext.replace("fifiya", choice)
+						var choice1 = possibleitems[Math.floor(Math.random()*possibleitems.length)];
+						newtext = newtext.replace("suckatoo", choice1)
+						choice = choice.concat(" ", choice1)
+						var choice2 = possibleitems[Math.floor(Math.random()*possibleitems.length)];
+						newtext = newtext.replace("jajajaj", choice2)
+						choice = choice.concat(" ", choice2)
+						var choice3 = possibleitems[Math.floor(Math.random()*possibleitems.length)];
+						newtext = newtext.replace("voldemort", choice3)
+						choice = choice.concat(" ", choice3)
+						var choice4 = possibleitems[Math.floor(Math.random()*possibleitems.length)];
+						newtext = newtext.replace("KLAROLINE", choice4)
+						choice = choice.concat(" ", choice4)
+						newtext = newtext.replace("whymeeee", choice)
+						document.getElementById("game").innerHTML = newtext;
+					}
+			</script>
+		</div>
+		</div>
+	</body>
+</html>
+

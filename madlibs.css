@@ -1,0 +1,66 @@
+html {
+	font-family: 'Gochi Hand', cursive;
+	margin:0;
+    padding:0;
+    border:0;
+    background-color: #808080 
+}
+
+body {
+	margin-left:27%;
+	margin-right:25%;
+	color:#FFFFFF;
+}
+
+.main {
+	margin: 60px 40px 10px 20px;
+}
+
+.main h1 {
+	font-size: 48px;
+	text-align: center
+}
+
+.main h4 {
+	margin-top: -20px;
+	text-align: center;
+	font-size: 24px
+}
+
+.main form {
+	padding-left: 30px;
+	font-size: 18px
+}
+
+#playbutton {
+	background-color: white;
+	border-style: double;
+	border-color:black;
+	font-size: 22px;
+	color:black;
+	font-family: 'Gochi Hand', cursive;
+	width: 201px;
+	height:50px;
+	margin: -10px 20px 10px 200px
+}
+
+#submitbutton {
+    border: none;
+    background-color: white;
+    font-family: 'Gochi Hand', cursive;
+    color:#696969;
+    font-size: 17px;
+    width:80px;
+    height:25px;
+    padding: 2px 8px;
+}
+#submitbutton:hover {
+    border: none;
+    background-color:#DC143C;
+    font-family: 'Gochi Hand', cursive;
+    font-size: 17px;
+    width:80px;
+    height:25px;
+    color:white;
+    padding: 2px 8px;
+}
